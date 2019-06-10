@@ -7,4 +7,4 @@
 - Foreign-born writers living in the United States
 - Writers living abroad who currently hold refugee and/or asylum-seeker status
 
-This webpage includes a map displaying the homelands of contributors to The Bare Life Review. The map has been built using [Leaflet](https://leafletjs.com/examples/quick-start/).
+This site includes a map displaying the birthplaces of contributors to inaugural issue of *The Bare Life Review*. The map has been built using [Leaflet](https://leafletjs.com/examples/quick-start/).
