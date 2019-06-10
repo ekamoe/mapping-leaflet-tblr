@@ -1,6 +1,8 @@
 # Mapping The Bare Life Review
 
-## About
+##### Site: https://ekamoe.github.io/mapping-tblr-leaflet/
+
+#
 
 [The Bare Life Review](https://barelifereview.org) is a literary journal whose sole mission is to publish immigrant and refugee writers. We accept work from:
 
