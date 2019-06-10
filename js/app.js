@@ -42,7 +42,7 @@ var zoomTimer;
 mymap.on("mouseover", function() {
   zoomTimer = setTimeout(function() {
     mymap.scrollWheelZoom.enable();
-  }, 1000);
+  }, 3000);
 });
 mymap.on("mouseout", function() {
   clearTimeout(zoomTimer);
