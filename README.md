@@ -1,6 +1,6 @@
 # Mapping The Bare Life Review
 
-##### Site: https://ekamoe.github.io/mapping-tblr-leaflet/
+### Site: https://ekamoe.github.io/mapping-tblr-leaflet/
 
 #
 
