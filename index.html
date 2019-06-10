@@ -1,1 +1,151 @@
-<h1>Mapping The Bare Life Review</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mapping The Bare Life Review</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+      crossorigin=""
+    ></script>
+    <!--Scroll code credit: https://jsfiddle.net/mzjan/set7aLnp/-->
+    <script>
+      var shiftWindow = function() {
+        scrollBy(0, -75);
+      };
+      window.addEventListener("hashchange", shiftWindow);
+      function load() {
+        if (window.location.hash) shiftWindow();
+      }
+    </script>
+
+    <style>
+      #mapid {
+        height: 515px;
+        width: 850px;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar-scroll" data-offset="120">
+    <header class="sticky-top">
+      <nav
+        id="navbar-scroll"
+        class="navbar navbar-expand-sm navbar-light bg-light"
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/TBLR email icon copy.png"
+            width="35"
+            height="35"
+            class="d-inline-block align-center"
+            alt="Logo for The Bare Life Review"
+          />
+          Mapping The Bare Life Review
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarMenu"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item-active">
+              <a class="nav-link" href="#About"
+                >About<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Map">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Notes">Notes</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+        <div data-spy="scroll" data-target="navbar-scroll" data-offset="0" class="container">
+        <h4 id="About">About The Bare Life Review</h4>
+        <p>
+          <a href="https://www.barelifereview.org/">The Bare Life Review </a>is
+          the only literary journal whose sole mission is to publish immigrant
+          and refugee writers. Contributors are either foreign-born and
+          living in the United States, or are living abroad holding refugee
+          and/or asylum-seeker status.
+        </p>
+      </div>
+      <div class="container mt-n3">
+        <h4 id="Map">Map</h4>
+        <p>
+          This map displays the birthplaces of contributors to the inaugural issue of <i>The Bare Life Review</i>. Click the
+          icons to learn more about the writers and editors.
+        </p>
+      </div>
+      <div class="container" id="mapid"></div>
+      <div class="container">
+        <h4 id="Notes">Notes</h4>
+        <p>Data collection, mapping, and site design by
+                <a
+                  href="mailto:enk@barelifereview.org?subject=Mapping%20The%20Bare%20Life%20Review"
+                  >Ellen Namakaokealoha Kamoe</a
+                >. Ellen is Co-Founder and Director of Operations at The Bare Life Review. She is also an MLIS student at the University of Washington. 
+                Her interests include special collections and digital mapping tools.</p>
+        <h6>Future projects:</h6>
+        <ul>
+        <li>Add Vol. 2 contributors to the map.</li>
+        <li>Add a search option to the map.</li>
+        <li>Add map layer to create spider markers for locations with multiple contributors.</li>
+        <li>Add a filtered table to search contributor details.</li>
+        <li>Move contributors.js array to a spreadsheet to loop through the data there.</li></ul>
+<p><small>Last updated: June 10, 2019</small></p>
+      </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/contributors.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      renderMap(CONTRIBUTORS);
+    </script>
+  </body>
+</html>
