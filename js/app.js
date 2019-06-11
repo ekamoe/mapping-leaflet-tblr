@@ -1,4 +1,4 @@
-const mymap = L.map("mapid").setView([30, 15], 2);
+const mymap = L.map("mapid").setView([10, 10], 1);
 
 L.tileLayer(
   "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}",
@@ -42,7 +42,7 @@ var zoomTimer;
 mymap.on("mouseover", function() {
   zoomTimer = setTimeout(function() {
     mymap.scrollWheelZoom.enable();
-  }, 3000);
+  }, 5000);
 });
 mymap.on("mouseout", function() {
   clearTimeout(zoomTimer);
